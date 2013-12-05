@@ -30,7 +30,7 @@ class Is_protected_javascript {
     public static function usage() {
 
         ob_start(); ?>
-            {exp:is_protected_javascript}"}yay{if:else}boo{/if}
+            {if "{exp:is_protected_javascript}"}yay{if:else}boo{/if}
         <?php
             $buffer = ob_get_contents();
             ob_end_clean();
